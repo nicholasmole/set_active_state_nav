@@ -8,13 +8,13 @@
  */
 
 //Paths for fields
-//require_once plugin_dir_path(__FILE__) . 'src/Helpers.php';
+require_once plugin_dir_path(__FILE__) . 'src/Helpers.php';
 require_once plugin_dir_path(__FILE__) . 'src/SetActiveStateNav.php';
 
 
 use Mole\SASN;
 use Mole\SASN\SetActiveStateNav;
-//use Mole\AUF\Helpers;
+use Mole\SASN\Helpers;
 
 new SetActiveStateNav();
 
