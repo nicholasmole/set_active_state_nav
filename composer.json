@@ -1,0 +1,12 @@
+{
+  "name": "nicholasmole/set_active_state_nav",
+  "version" : "0.1.0",
+  "description": "Add a class to the active menu item - in on the #main-menu navbar",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Nicholas Mole",
+      "email": "nmole065@gmail.com"
+    }
+  ]
+}
