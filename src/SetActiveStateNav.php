@@ -38,11 +38,14 @@ class SetActiveStateNav {
 
         //check the main-menu for thus url
         $(document).ready(function(){
+          //Make sure url isn't blank
+          if("<?php echo $url; ?>"){
 
-          if ($('#menu-main-menu a:icontains("<?php echo $url ?>")').length > 0) {
+            if ($('#menu-main-menu a:icontains("<?php echo $url ?>")').length > 0) {
+              
+              $('#menu-main-menu a:icontains("<?php echo $url ?>")').addClass("the_active_state_nav_item");
 
-            $('#menu-main-menu a:icontains("<?php echo $url ?>")').addClass("the_active_state_nav_item");
-
+            }
           }
 
         });
