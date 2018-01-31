@@ -27,34 +27,8 @@ class SetActiveStateNav {
   }
 
   public function add_class_to_nav($url){
-    ?>
-    <script>
-      (function ($) {
-        //Create my own query that we contain
-        jQuery.expr[':'].icontains = function(a, i, m) {
-          return jQuery(a).text().toUpperCase()
-              .indexOf(m[3].toUpperCase()) >= 0;
-        };
-
-        //check the main-menu for thus url
-        $(document).ready(function(){
-          //Make sure url isn't blank
-          if("<?php echo $url; ?>"){
-
-            if ($('#menu-main-menu a:icontains("<?php echo $url ?>")').length > 0) {
-              
-              $('#menu-main-menu a:icontains("<?php echo $url ?>")').addClass("the_active_state_nav_item");
-
-            }
-          }
-
-        });
-        $.fn.myfunction = function() {
-          return this;
-        };
-      })(jQuery);
-    </script>
-    <?php
+    $template = Helpers::get_template_path('add_class_to_nav.php');
+    include $template;
   }
   
 
